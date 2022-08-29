@@ -1,0 +1,48 @@
+html{
+	background-color:#0000000;
+}
+#titulo{
+	text-align:center;
+	font-family:arial;
+	background-color:black;
+	color:white;
+	margin-top:0px;
+	display:block;
+	border-radius:0px 0px 20px 20px;
+	}
+#hat:hover{
+	scale:110%;
+	margin-right:70px;
+	background-color:black;
+}
+
+#jogos{
+	margin:20px;
+}
+#pesquisa{
+	text-align:right;
+}
+input{
+	width:300px;
+	background-color:black;
+	color:white;
+	border-radius:20px
+}
+#hatinfo{
+	background-color:black;
+	color:white;
+	border-radius:20px;
+	width:500px;
+	height:600px;
+	position:absolute;
+	margin:0px;
+	display:none;
+}
+button{
+	border:none;
+	background-color:white;
+}
+iframe{
+	width:500px;
+	height:150px;
+}
