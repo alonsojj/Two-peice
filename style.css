@@ -1,5 +1,5 @@
 html{
-	background-color:#0000000;
+	background-color:white;
 }
 #titulo{
 	text-align:center;
@@ -8,17 +8,18 @@ html{
 	color:white;
 	margin-top:0px;
 	display:block;
-	border-radius:0px 0px 20px 20px;
+	border-radius:0px 15px 50px 20px ;
 	}
+.Jogos{
+	display:inline-block;
+}
 #hat:hover{
 	scale:110%;
 	margin-right:70px;
 	background-color:black;
 }
 
-#jogos{
-	margin:20px;
-}
+
 #pesquisa{
 	text-align:right;
 }
@@ -28,13 +29,12 @@ input{
 	color:white;
 	border-radius:20px
 }
-#hatinfo{
+.infobox{
 	background-color:black;
 	color:white;
 	border-radius:20px;
 	width:500px;
 	height:600px;
-	position:absolute;
 	margin:0px;
 	display:none;
 }
@@ -45,4 +45,8 @@ button{
 iframe{
 	width:500px;
 	height:150px;
+}
+#castle:hover{
+	scale:110%;
+	background-color:white;
 }
