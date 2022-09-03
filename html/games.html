@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Jogos Educados</title>
+		<link rel="stylesheet" href=../css/games.css>
+		<script type="text/javascript" src="../js/games.js"></script>
+		<link rel="icon" href=../Images/hat.png>
+	</head>
+	<body>
+		<header>
+			<h1 id="titulo">Jogos Educados</h1>
+			<div id="pesquisa">
+				<form>
+					<input type="text">
+				</form>
+			</div>
+		</header>
+		<main id="allgames">
+			<div id="Jogos">
+				<div id="jogos1" class="Jogos">
+					<button class="bnt_jogos" id="hatbnt" type"button" onclick="button('hatinfo')">
+						<img id="hat" src=../Images/Hat-game.jfif> 
+						<div id="hatinfo" class="infobox">
+							Jogo muito divertido
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/qDNz8JDIPck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</button>
+				</div>
+				<div id="jogos2" class="Jogos">
+					<button class="bnt_jogos" id="castle" onclick="button('castleinfo')">
+						<img id="castle" src=../Images/castle-crashers.jfif>
+						<div id="castleinfo" class="infobox">
+							jogo de castelo 
+						</div>
+					</button>
+				</div>
+			</div>
+		</main>
+
+	</body>
+</html>
