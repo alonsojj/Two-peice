@@ -1,0 +1,248 @@
+@font-face{
+    font-family: "OnePiece";
+    src : url("../font/one\ piece\ font.ttf")
+}
+@font-face{
+    font-family:"coco";
+    src:url("../font/Cocogoose\ Pro-trial.ttf")
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:#49cfff;
+    height: 400vh;
+    overflow-y: overlay;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    display: none;    
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 20px;       
+    border-color: black; 
+  }
+
+
+
+button{
+    border-radius: 5px;
+    border-style: dashed;
+    border-color: black;
+    background:transparent;
+
+}
+
+#name{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+h1{
+    margin: 2px;
+    font-family: 'OnePiece';
+    font-weight: 100px;
+    position: relative;
+}
+.sky.div{
+    display:inline-grid;
+    margin:10px;
+    position:relative;
+    left:-155px;
+}
+.sky img{
+    animation: cloud;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.sky:nth-child(1){
+    width: 150px;
+    animation-duration: 12s;
+    animation-delay: 5s;
+}
+.sky:nth-child(2){
+    width: 100px;
+    animation-duration: 12s;
+    animation-delay: 9s;
+}
+.sky:nth-child(3){
+    width: 130px;
+    animation-duration: 12s;
+    animation-delay: 16s;
+}
+.sky:nth-child(4){
+    width: 110px;
+    animation-duration: 12s;
+    animation-delay: 12s;
+}
+.sky:nth-child(5){
+    width: 120px;
+    animation-duration: 12s;
+    animation-delay: 13s;
+}
+.sky:nth-child(6){
+    width: 140px;
+    animation-duration: 12s;
+    animation-delay: 15s;
+}
+
+@keyframes cloud {
+    from{transform: translateX(0);}
+    to{transform: translateX(2000px);}
+}
+.wave {
+    padding: 0;
+    margin:0;
+    bottom: -20vh;
+    left:0;
+    right: 0;
+    position:absolute;
+    margin-top: 10%;
+
+
+    }
+
+
+.wave.wave1{
+    animation-name: wave1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    z-index: 4;
+    width: 200%;
+}
+@keyframes wave1{
+    from { transform: translateX(-150px);}
+}
+.wave.wave2{
+    animation-name: wave2;
+    animation-duration: 3s;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    z-index: 2;
+    opacity: 0.7;
+    width: 200%;
+}
+@keyframes wave2{
+    from { transform: translateX(-650px);}
+}
+
+.wave.wave3{
+    animation-name: wave3;
+    animation-duration: 3s;
+    animation-delay: 0.9s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    z-index: 1;
+    opacity: 0.5;
+    width: 200%;
+}
+@keyframes wave3 {
+    from{transform:translate(-150px)}
+}
+
+.sunny{
+    display: flex;
+    justify-content: center;
+    bottom: 5%;
+    width: 100vw;
+    position: absolute;
+    z-index:3;
+    animation-name: boat;
+    animation-duration: 7s ;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.sunny img{
+    width: 600px;
+}
+@keyframes boat{
+    from{transform:rotate(-10deg)}
+    50%{transform:rotate(10deg)}
+    100%{transform:rotate(-10deg)}
+
+}
+.games{
+    width:100vw;
+    top: 100vh;
+    height: 400vh;
+    position: relative;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 20%, rgba(0,153,255,1) 72%, rgba(0,159,255,1) 73%,#0099ff 81% ) ;
+}
+#conteudo{
+    bottom: 10%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    width: 100vw;
+}
+.conteudo{
+    color:white;
+    font-family: coco;
+    font-size: 200px;
+    text-decoration: none;
+}
+.conteudo.let:hover{
+    font-size: 230px;
+    color:#0099ff;
+}
+
+
+.booble{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.booble img{
+    bottom:0px;
+    width:70px;
+    animation-name:bolhas;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    opacity: 0;
+}
+@keyframes bolhas{
+    0%{transform:translateY(0);opacity: 0;}
+    15%{opacity: 0;}
+    20%{opacity: 1;}
+    90%{opacity: 1;}
+    100%{transform:translateY(-420vh);opacity:0}
+}
+.booble img:nth-child(1){
+    animation-delay: 2s;
+}
+.booble img:nth-child(2){
+    animation-delay: 0.1s;
+}
+.booble img:nth-child(3){
+    animation-delay: 7s;
+}
+.booble img:nth-child(4){
+    animation-delay: 5s;
+}
+.booble img:nth-child(5){
+    animation-delay: 4s;
+}
+.booble img:nth-child(6){
+    animation-delay: 6.2s;
+}
