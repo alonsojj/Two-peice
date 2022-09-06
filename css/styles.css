@@ -177,7 +177,7 @@ h1{
 }
 .games{
     width:100vw;
-    top: 100vh;
+    top: 80vh;
     height: 400vh;
     position: relative;
     background: rgb(2,0,36);
